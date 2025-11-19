@@ -1,16 +1,160 @@
-:root{--bg:#0f1720;--card:#0b1220;--muted:#9aa4b2;--accent:#7dd3fc;--text:#e6eef6}
-*{box-sizing:border-box}body{font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;margin:0;background:linear-gradient(180deg,#071024 0%,#081123 100%);color:var(--text);line-height:1.5}
-.container{max-width:900px;margin:32px auto;padding:0 20px}
-.site-header{padding:28px 0;border-bottom:1px solid rgba(255,255,255,.04)}
-.site-header h1{margin:0;font-size:28px}
-.subtitle{margin:6px 0 0;color:var(--muted)}
-.top-links{margin-top:12px}
-.top-links a{color:var(--accent);margin-right:12px;text-decoration:none;font-size:14px}
-.card{background:rgba(255,255,255,.03);padding:20px;border-radius:10px;margin:18px 0;box-shadow:0 6px 18px rgba(2,6,23,.6)}
-.quick-stats{list-style:none;padding:0;margin:12px 0 0;color:var(--muted)}
-.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-.project{margin-bottom:14px}
-.job{margin-bottom:12px}
-.site-footer{padding:18px 0;margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
-a.btn{display:inline-block;margin-top:10px;padding:8px 14px;border-radius:8px;background:var(--accent);color:#04111a;text-decoration:none;font-weight:600}
-@media(max-width:600px){.container{padding:16px}.site-header h1{font-size:22px}}
+/* ------------------ GLOBAL ------------------ */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ------------------ HEADER ------------------ */
+
+.site-header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #161b22;
+  border-bottom: 1px solid #2d333b;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.subtitle {
+  margin-top: 6px;
+  color: #9ca3af;
+  font-size: 15px;
+}
+
+.top-links a {
+  color: #58a6ff;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.top-links a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------ CARDS ------------------ */
+
+.card {
+  background: #161b22;
+  padding: 25px;
+  margin: 25px 0;
+  border-radius: 12px;
+  border: 1px solid #2d333b;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ------------------ BUTTON ------------------ */
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #238636;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  background: #2ea043;
+}
+
+/* ------------------ HEADINGS ------------------ */
+
+h2 {
+  margin-top: 0;
+  border-bottom: 1px solid #2d333b;
+  padding-bottom: 6px;
+  color: #ffffff;
+}
+
+h3 {
+  color: #d0d7de;
+}
+
+/* ------------------ SKILLS GRID ------------------ */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.skills-grid div {
+  background: #21262d;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+}
+
+/* ------------------ PROJECTS ------------------ */
+
+.project {
+  padding: 10px 0;
+  border-bottom: 1px solid #30363d;
+}
+
+.project:last-child {
+  border-bottom: none;
+}
+
+.project a {
+  color: #79c0ff;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------ EXPERIENCE ------------------ */
+
+.job {
+  margin-bottom: 20px;
+}
+
+.job h3 {
+  margin-bottom: 4px;
+}
+
+.job ul {
+  margin-top: 6px;
+  padding-left: 20px;
+}
+
+/* ------------------ CONTACT ------------------ */
+
+#contact a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------ FOOTER ------------------ */
+
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #8b949e;
+  border-top: 1px solid #2d333b;
+}
